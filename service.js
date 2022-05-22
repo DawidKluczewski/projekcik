@@ -133,14 +133,6 @@ module.exports = {
         update: klienci_update
     },
 
-    samochody: {
-        all: samochody_all,
-        single: samochody_single,
-        create: samochody_create,
-        delete: samochody_delete,
-        update: samochody_update
-    },
-
     wypozyczenia: {
         all: wypozyczenia_all,
         single: wypozyczenia_single,
