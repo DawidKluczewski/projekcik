@@ -141,12 +141,4 @@ module.exports = {
         delete: samochody_delete,
         update: samochody_update
     },
-
-    wypozyczenia: {
-        all: wypozyczenia_all,
-        single: wypozyczenia_single,
-        create: wypozyczenia_create,
-        delete: wypozyczenia_delete,
-        update: wypozyczenia_update
-    }
 };
