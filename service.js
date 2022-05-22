@@ -74,5 +74,14 @@ module.exports = {
         create: klienci_create,
         delete: klienci_delete,
         update: klienci_update
+    },
+
+
+    wypozyczenia: {
+        all: wypozyczenia_all,
+        single: wypozyczenia_single,
+        create: wypozyczenia_create,
+        delete: wypozyczenia_delete,
+        update: wypozyczenia_update
     }
-}
+};
