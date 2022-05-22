@@ -63,7 +63,7 @@ async function klienci_update(idklienci, klient){
         WHERE idklienci=${idklienci}
     `
     );
-    return result.affectedRows ? {idklienci: result.insertId} : 'Nie zmieniono rekordu klienta';
+    return result.affectedRows ? {idklienci: result.insertId} : 'Nie zmieniono żadnego rekordu klienta';
 }
 
 module.exports = {
