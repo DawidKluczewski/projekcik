@@ -3,6 +3,7 @@ const app = express();
 const port = 8002;
 const bodyParser = require("body-parser");
 const router = require("./router");
+const router1 = require("./router1");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -12,7 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/klienci", router);
-app.use("/samochody", router);
+app.use("/samochody", router1);
 
 app.use((err, req, res, next) =>{
     const statusCode = err.statusCode || 500;
