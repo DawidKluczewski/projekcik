@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
 
 app.use("/klienci", router);
 app.use("/samochody", router);
+app.use("/wypozyczenia", router);
 
 app.use((err, req, res, next) =>{
     const statusCode = err.statusCode || 500;
