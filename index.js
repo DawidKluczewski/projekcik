@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 8000;
+const port = 8002;
 const bodyParser = require("body-parser");
 const router = require("./router");
 
@@ -23,5 +23,5 @@ app.use((err, req, res, next) =>{
 })
 
 app.listen(port, () => {
-    console.log('Serwer działa na http://localhost:8000/');
+    console.log('Serwer działa na http://localhost:8002/');
 });
