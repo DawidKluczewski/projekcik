@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const router = require("./router");
 const router1 = require("./router1");
 const router2 = require("./router2");
+const router3 = require("./router3");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -16,6 +17,7 @@ app.get("/", (req, res) => {
 app.use("/klienci", router);
 app.use("/samochody", router1);
 app.use("/wypozyczenia", router2);
+app.use("/specyfikacje_samochodu", router3);
 
 app.use((err, req, res, next) =>{
     const statusCode = err.statusCode || 500;
